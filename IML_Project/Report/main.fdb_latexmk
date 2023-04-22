@@ -1,9 +1,9 @@
 # Fdb version 3
-["xdvipdfmx"] 1682108803 "main.xdv" "main.pdf" "main" 1682108806
-  "main.xdv" 1682108803 420060 af6aa09d31df1e31678eddb959cb6798 "xelatex"
+["xdvipdfmx"] 1682193464 "main.xdv" "main.pdf" "main" 1682193556
+  "main.xdv" 1682193464 468376 0beaeae9b725f3bc5adf597b236a7e82 "xelatex"
   (generated)
   "main.pdf"
-["xelatex"] 1682108800 "e:/Course 012/IML/IML_Project/Report/main.tex" "main.xdv" "main" 1682108805
+["xelatex"] 1682193461 "e:/Course 012/IML/IML_Project/Report/main.tex" "main.xdv" "main" 1682193556
   "c:/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1648729178 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1648730213 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1648728803 1004 54797486969f23fa377b128694d548df ""
@@ -190,12 +190,12 @@
   "c:/texlive/2021/texmf-dist/web2c/texmf.cnf" 1648729354 39972 3d6bb4d9d719e93193fa020b58adf5d4 ""
   "c:/texlive/2021/texmf-var/web2c/xetex/xelatex.fmt" 1648730298 5093733 e840ea8a4220a520c681600c308c97ae ""
   "c:/texlive/2021/texmf.cnf" 1648730223 713 e69b156964470283e0530f5060668171 ""
-  "e:/Course 012/IML/IML_Project/Report/main.tex" 1682108800 20997 7ba4fc245d96592f3a091ba3606d224a ""
+  "e:/Course 012/IML/IML_Project/Report/main.tex" 1682193555 30435 c16fc418e4371b1bc662b86eb89bec3c ""
   "logo/logo.png" 1678186638 12151 908dd55c5271716f7a77323a8a57a0ad ""
   "logo/logo2.png" 1678186638 43293 47a971f37e4440ed15271482e03873bf ""
-  "main.aux" 1682108803 7788 74ae498de44b82a6c4ec63db1d45af14 "xelatex"
-  "main.out" 1682108803 1452 a4b9c9fe95c3a9db2ced9f932c951861 "xelatex"
-  "main.tex" 1682108800 20997 7ba4fc245d96592f3a091ba3606d224a ""
+  "main.aux" 1682193464 8020 6d5966f1ac5327ac3cc22f45bff90057 "xelatex"
+  "main.out" 1682193464 1756 bc2c2d7e5d605432db4c836f5fffd08b "xelatex"
+  "main.tex" 1682193555 30435 c16fc418e4371b1bc662b86eb89bec3c ""
   "outputs/output1.png" 1682076748 36377 5ae2ec2aeb487033c0d929944ef682a2 ""
   "outputs/output10.png" 1682107072 95826 29756a670dc639d537da8c6ddb97e69c ""
   "outputs/output11.png" 1682107232 70482 c109c4b88c102b8a7a956e0b9b59b495 ""
@@ -212,6 +212,7 @@
   "outputs/output5.png" 1682080824 111781 6c115637a98519f7376ec49a3f3400d0 ""
   "outputs/output6.png" 1682080830 71906 aaf1361c5849e477fb9194a6be397c30 ""
   "outputs/output9.png" 1682107064 78033 ebc2bf1efea8560e75c2dfac4f90d4a5 ""
+  "outputs/pic1.png" 1682188268 106300 25e816b66e06868eecdb8095342b718d ""
   "uni-code.sty" 1678186638 2485 5fd6f6591117f1f0ad2ce38234e0be84 ""
   "uni-environments.sty" 1682077910 4724 c70298798aa2978f91245a3cdf4ef31b ""
   "uni-math.sty" 1678186638 704 d86df97abd20b1a32bb8271e661b4580 ""

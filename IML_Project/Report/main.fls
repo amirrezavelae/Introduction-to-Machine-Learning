@@ -1129,6 +1129,9 @@ INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm10.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm7.tfm
 INPUT ./logo/logo2.png
 INPUT logo/logo2.png
+INPUT ./outputs/pic1.png
+INPUT ./outputs/pic1.png
+INPUT outputs/pic1.png
 INPUT c:/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT c:/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
 INPUT c:/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty

@@ -30,7 +30,8 @@ In your own words, explain how the MM algorithm can deal with non-convex optimiz
     MM algorithm is an iterative algorithm for optimizing a nonconvex or nonconcave $l(\theta)$ that has a complex form. For example if our goal is finding maximum of a function we can consider a simpler concave function $Q(\theta,\theta^{(t)})$ that depends on a certain parameter. Function must be tight lowerbound that means in a certain point $l(\theta^{(t)}=Q(\theta^{(t)},\theta^{(t)}))$ and also $l(\theta\leq Q(\theta,\theta^{(t)}))$. In each iteration we choose the max of $Q(\theta,\theta^{(t)}))$ as next level parameter $\theta^{(t+1)}=argmax_{\theta}Q(\theta,\theta^{(t)})$ and we move on to reach the maximum of the main function $l(\theta)$ and according to the following inequality
     we act correctly:
     \\$l(\theta^{(t+1)})\leq Q(\theta^{(t+1)},\theta^{(t)})\leq Q(\theta^{(t)},\theta^{(t)})=l(\theta^{(t)})$
-    also we can do same for finding minimum but with convex function.
+        also we can do same for finding minimum but with convex function.It means we can choose a function that $l(\theta)\leq Q(\theta,\theta^t)$ and we move on curve to find the minimum.\\
+    \includegraphics[scale=0.5]{outputs/pic1.png}
 \end{qsolve}
 
 \subsection{Theory Question 2.}
@@ -56,8 +57,178 @@ Explain why it’s easier to optimize $p_{Y,Z}(y^{i}_n,z^{i}_n=K;\theta)$ than $
 \subsection{Theory Question 3.}
 Read about variational inference (or variational bayesian methods) and compare it with the procedure we used for the EM algorithm (You might want to check Wikipedia for this!)
 \begin{qsolve}[solution]
-    Variational Bayes (VB) is often compared with expectation maximization (EM). The actual numerical procedure is quite similar, in that both are alternating iterative procedures that successively converge on optimum parameter values. The initial steps to derive the respective procedures are also vaguely similar, both starting out with formulas for probability densities and both involving significant amounts of mathematical manipulations. However, there are a number of differences. Most important is what is being computed. EM computes point estimates of posterior distribution of those random variables that can be categorized as "parameters", but only estimates of the actual posterior distributions of the latent variables (at least in "soft EM", and often only when the latent variables are discrete). The point estimates computed are the modes of these parameters; no other information is available. VB, on the other hand, computes estimates of the actual posterior distribution of all variables, both parameters and latent variables. When point estimates need to be derived, generally the mean is used rather than the mode, as is normal in Bayesian inference. Concomitant with this, the parameters computed in VB do not have the same significance as those in EM. EM computes optimum values of the parameters of the Bayes network itself. VB computes optimum values of the parameters of the distributions used to approximate the parameters and latent variables of the Bayes network. For example, a typical Gaussian mixture model will have parameters for the mean and variance of each of the mixture components. EM would directly estimate optimum values for these parameters. VB, however, would first fit a distribution to these parameters — typically in the form of a prior distribution, e.g. a normal-scaled inverse gamma distribution — and would then compute values for the parameters of this prior distribution, i.e. essentially hyperparameters. In this case, VB would compute optimum estimates of the four parameters of the normal-scaled inverse gamma distribution that describes the joint distribution of the mean and variance of the component.
+    Variational Bayes (VB) is often compared with expectation maximization (EM). The actual numerical procedure is quite similar, in that both are alternating iterative procedures that successively converge on optimum parameter values. The initial steps to derive the respective procedures are also vaguely similar, both starting out with formulas for probability densities and both involving significant amounts of mathematical manipulations. However, there are a number of differences. Most important is what is being computed. EM computes point estimates of posterior distribution of those random variables that can be categorized as "parameters", but only estimates of the actual posterior distributions of the latent variables (at least in "soft EM", and often only when the latent variables are discrete). The point estimates computed are the modes of these parameters; no other information is available. VB, on the other hand, computes estimates of the actual posterior distribution of all variables, both parameters and latent variables. When point estimates need to be derived, generally the mean is used rather than the mode, as is normal in Bayesian inference. Concomitant with this, the parameters computed in VB do not have the same significance as those in EM. EM computes optimum values of the parameters of the Bayes network itself. VB computes optimum values of the parameters of the distributions used to approximate the parameters and latent variables of the Bayes network. For example, a typical Gaussian mixture model will have parameters for the mean and variance of each of the mixture components. EM would directly estimate optimum values for these parameters.
+    \splitqsolve
+    VB, however, would first fit a distribution to these parameters — typically in the form of a prior distribution, e.g. a normal-scaled inverse gamma distribution — and would then compute values for the parameters of this prior distribution, i.e. essentially hyperparameters. In this case, VB would compute optimum estimates of the four parameters of the normal-scaled inverse gamma distribution that describes the joint distribution of the mean and variance of the component.
 \end{qsolve}
+
+\subsection{Theory Question 4.}
+Compute estimate of parameters for Gaussian Mixture Models for $N$ observed data $\{x_i\}_{i=1}^N$
+\begin{itemize}
+    \item Determine model parameters and initialize them.
+    \item Compute complete dataset likelihood.
+    \item Find closed-form solution for parameters using EM algorithm.
+\end{itemize}
+\begin{qsolve}[solution]
+    We want to find the parameter of latent distributions :
+    \begin{equation*}
+        \pi= \begin{bmatrix}
+            \pi_1  \\
+            \pi_2  \\
+            \vdots \\
+            \pi_K
+        \end{bmatrix}
+        \mu= \begin{bmatrix}
+            \mu_1  \\
+            \mu_2  \\
+            \vdots \\
+            \mu_K
+        \end{bmatrix}
+        \sigma^2= \begin{bmatrix}
+            \sigma^2_1 \\
+            \sigma^2_2 \\
+            \vdots     \\
+            \sigma^2_K
+        \end{bmatrix}
+    \end{equation*}
+    According to project description:
+    \begin{gather*}
+        P_X(x|\theta)  = \prod_{i=1}^n \sum_{k=1}^K \pi_k p_{X_k} (x_i|\theta_k) \\
+        q_n(z_n)       = p(Z=k|\theta_k)=Cat(z|\pi_k)=\pi_k                      \\
+        l(\theta)\geq\sum_{n}\sum_{z_n}q_n(z_n)ln(\frac{p_{Y,Z}(y_n,z_n|\theta)}{q_n(z_n)})=\sum_{n}E_{q_n}[ln(p_{Y,Z}(y_n,z_n|\theta))]+H(q_n)
+    \end{gather*}
+    $H(q_n)$does not depends on $\theta$ so we don't consider it for maximizing:
+    \begin{gather*}
+        Q(\theta,\theta^t)=\sum_{n}E_{q_n}[ln(p_{Y,Z}(y_n,z_n|\theta))],\theta^{(t+1)}=argmax_\theta Q(\theta,\theta^t) \\
+    \end{gather*}
+    For minimizing KL divergence we must use $q^*=p$:
+    \begin{equation*}
+        \gamma_n^t(k)=q_n^*=p(Z=k|x_n,\theta)=\frac{p(X=x_n|Z=k,\theta)p(Z=k)}{p(X=x_n)}\\
+        =\frac{\pi_k^tp(X=x_n|Z=k,\theta)}{\sum_{m=1}^K\pi_m^t(X=x_n|Z=m,\theta_m)}
+    \end{equation*}
+    \splitqsolve
+    \begin{gather*}
+        Q(\theta,\theta^{(t+1)})=\sum_nE_{q_n^t}[ln(p_{X,Z}(x_n,z_n|\theta))]=\sum_n E[ln(p_{X|Z}(x_n|z_n=k,\theta))p(Z_n=k|\theta)] \\
+        = E[\sum_nln(p_{X|Z}(x_n|Z_n=k,\theta))+(\sum_nln(p(Z_n=k|\theta)))]  \\
+        = E[\sum_nln(\prod_{k=1}^K\pi_k^{\mathbb{I}(Z_n=k)})+\sum_nln(\prod_kN(x_n|\mu_k,\sum_k)^{\mathbb{I}(Z_n=k)})] \\
+        = E[\sum_n\sum_k{\mathbb{I}(Z_n=k)}ln(\pi_k)+\sum_n\sum_k{\mathbb{I}(Z_n=k)}ln(N(x_n|\mu_k,\sum_k))] \\
+        = \sum_n\sum_kE[{\mathbb{I}(Z_n=k)}]ln(\pi_k)+\sum_n\sum_kE[{\mathbb{I}(Z_n=k)}]ln(N(x_n|\mu_k,\sum_k))
+    \end{gather*}
+    The expectation just depends on $z_n$ so with placement of $\gamma_n^t(k)$:
+    \begin{align*}
+        Q(\theta,\theta^{t+1}) & =\sum_n\sum_k\gamma_n^t(k)ln(\pi_k)                                                                             \\
+                               & + \sum_n\sum_k\gamma_n^t(k)ln(\frac{1}{(2\pi)^{0.5}|\sum_k|^{0.5}}exp(-0.5(x_n-\mu_n)^T\sum_k^{-1}(x_n-\mu_n)))
+    \end{align*}
+    \begin{gather*}
+        =\sum_n\sum_k\gamma_n^t(k)ln(\pi_k)+\sum_n\sum_k\gamma_n^t(k)(-0.5ln|\sum_k|-0.5(x_n-\mu_n)^T\sum_k^{-1}(x_n-\mu_n)) \\
+        = Q(\theta,\theta^t)=\sum_n\sum_k\gamma_n^t(k)ln(\pi_k)-0.5\sum_n\sum_k\gamma_n^t(k)(ln|\sum_k|+(x_n-\mu_n)^T\sum_k^{-1}(x_n-\mu_k))
+    \end{gather*}
+    We must maximize Q than $\mu_k$:
+    \begin{gather*}
+        \frac{\partial Q(\theta,\theta(t))}{\partial \mu_k}=0,\\
+        y_n=xn-\mu_k \\
+        -\frac{\partial}{\partial y_n}y_n^T\sum_k^{-1}y_n\frac{\partial y_n}{\partial\mu_k}=-(\sum_k^{-1}+\sum_k^{-T})y_n=-(\sum_k^{-1}+\sum_k^{-T})(x_n-\mu_k)
+    \end{gather*}
+    so:
+    \begin{gather*}
+        \frac{\partial Q(\theta,\theta(t))}{\partial \mu_k}=0\rightarrow-0.5\sum_n\sum_k\gamma_n^t(k)(-(2\sum_k^{-1})(x_n-\mu_k))=0 \\
+        \rightarrow\sum_n\gamma_n^t(k)\sum_k^{-1}(x_n-\mu_k)=0\rightarrow\mu_k^{(t+1)}=\frac{\sum_n\gamma_n^t(k)x_n}{\sum_n\gamma_n^t(k)} \\
+        Q(\theta,\theta^t)=\sum_n\sum_k\gamma_n^t(k)ln(\pi_k) -0.5\sum_n\sum_k\gamma_n^t(k)(ln|\sum_k|+(x_n-\mu_n)^T\sum_k^{-1}(x_n-\mu_k))
+    \end{gather*}
+    \splitqsolve
+    \begin{gather*}
+        x^TAx=tr(x^TAx)=tr(xx^TA) \\
+        Q(\theta,\theta^t)=\sum_n\sum_k\gamma_n^t(k)ln(\pi_k)- 0.5\sum_n\sum_k\gamma_n^t(k)(ln|\sum_k|+tr((x_n-\mu_n)^T\sum_k^{-1}(x_n-\mu_k))) \\
+        =\sum_n\sum_k\gamma_n^t(k)ln(\pi_k)- 0.5\sum_n\sum_k\gamma_n^t(k)(ln|\sum_k|+tr((x_n-\mu_n)(x_n-\mu_k)^T)\Gamma) \\
+        \frac{Q(\theta,\theta^t)}{\partial\Gamma}=0\rightarrow0.5\sum_n\sum_k\gamma_n^t(k)(\Gamma^{-T}-(x_n-\hat{\mu_k})(x_n-\hat{\mu_k})^T)=0
+    \end{gather*}
+    We do maximization for every latent distribution:
+    \begin{gather*}
+        \sum_n\gamma_n^t(k)(\sum_k-(x_n-\hat{\mu_k})(x_n-\hat{\mu_k})^T)=0\\
+        \sum_k^{t+1}=\frac{\sum_n\gamma_n^t(k)(x_n-\mu_k^t)(x_n-\mu_k^t)^T}{\sum_n\gamma_n^t(k)}
+    \end{gather*}
+    Now we maximize Q for finding $\pi_k^{t+1}$, just first part of Q depends on $\pi_k$ so:
+    \begin{align*}
+        \pi_k^{t+1}=argmax_{\pi_k}\sum_k\sum_n\gamma_n^t(k)ln(\pi_k)
+    \end{align*}
+    We use The method of Lagrange coefficients to optimize the function:
+    \begin{gather*}
+        L(\pi_k,\lambda)=\sum_k\sum_n\gamma_n^t(k)ln(\pi_k)+\lambda\sum_k\pi_k-\lambda,\sum_k\pi_k=1\\
+        \frac{\partial L(\pi_k,\lambda)}{\partial\pi_k}=0\rightarrow\sum_{n}\gamma_n^t(k)\pi_k^{-1}+\lambda=0\rightarrow \pi_k=-\frac{\sum_n\gamma_n^t(k)}{\lambda}\\
+        \sum_k\gamma_n^t(k)=\sum_k\frac{p(X=x_n|Z=k,\theta)p(Z=k)}{p(X=x_n)}=1\\
+        \sum_k\pi_k=-\frac{\sum_n\sum_k\gamma_n^t(k)}{\lambda}=1=-\sum_n\frac{1}{\lambda}=-\frac{N}{\lambda}\rightarrow\lambda=-N \\
+        \pi_k^{t+1}=\frac{\sum_n\gamma_n^t(k)}{N}
+    \end{gather*}
+\end{qsolve}
+\clearpage
+\subsection{Theory Question 5.}
+Compute estimate of parameters for Categorical  Mixture Models for $N$ observed data $\{x_i\}_{i=1}^N$
+\begin{itemize}
+    \item Determine model parameters and initialize them.
+    \item Compute complete dataset likelihood.
+    \item Find closed-form solution for parameters using EM algorithm.
+\end{itemize}
+\begin{qsolve}
+    We want to find the parameter of latent distributions :
+    \begin{align*}
+        \pi= \begin{bmatrix}
+            \pi_1  \\
+            \pi_2  \\
+            \vdots \\
+            \pi_K
+        \end{bmatrix}
+        \theta_1= \begin{bmatrix}
+            \theta_1 \\
+            \theta_2 \\
+            \vdots   \\
+            \theta_M
+        \end{bmatrix}
+        \hdots
+        \theta_k= \begin{bmatrix}
+            \theta_1 \\
+            \theta_2 \\
+            \vdots   \\
+            \theta_M
+        \end{bmatrix}
+    \end{align*}
+    From previous question we know:
+    \begin{align*}
+        \gamma_n^t(k)=q_n^*=p(Z=k|x_n,\theta) & =\frac{p(X=x_n|Z=k,\theta)p(Z=k)}{p(X=x_n)}                                 \\
+                                              & =	\frac{\pi_k^tp(X=x_n|Z=k,\theta)}{\sum_{m=1}^K\pi_m^t(X=x_n|Z=m,\theta_m)}
+    \end{align*}
+    \begin{gather*}
+        Q(\theta,\theta^{t+1})=E[\sum_nln(p_{X|Z}(x_n|Z_n=k,\theta))+(\sum_nln(p(Z_n=k|\theta)))] \\
+        =E[\sum_nln(\prod_{k=1}^K\pi_k^{\mathbb{I}(Z_n=k)})+(\sum_nln(\prod_kCat(x_n|\theta_k)^{\mathbb{I}(Z_n=k)}))] \\
+        =\sum_n\sum_kE[{\mathbb{I}(Z_n=k)}]ln(\pi_k)+\sum_n\sum_kE[{\mathbb{I}(Z_n=k)}]ln(Cat(x_n|\theta_k)) = \\
+        =\sum_n\sum_k\gamma_n^t(k)ln(\pi_k)+\sum_n\sum_k\gamma_n^t(k)ln(\prod_{m=1}^{M}\theta_{km}^{\mathbb{I}(x_n=m)}) \\
+        =\sum_n\sum_k\gamma_n^t(k)ln(\pi_k)+\sum_n\sum_k\sum_m\gamma_n^t(k)ln(\theta_{km})\mathbb{I}(x_n=m)
+    \end{gather*}
+    We use The method of Lagrange coefficients to optimize the function:
+    \begin{gather*}
+        \theta^{t+1}=argmax_\theta Q(\theta,\theta^t)\\
+        \sum_m\theta_{km}=1\\
+        L(\theta,\lambda)=Q(\theta,\theta^t)+\lambda(1-\sum_m\theta_{km})
+    \end{gather*}
+    \splitqsolve
+    We take a derivative with respect to one of the parameters of the hidden distributions.($\theta_{km}$ is mth parameter of kth distribution):
+    \begin{gather*}
+        \frac{\partial L(\theta,\lambda)}{\partial \theta_{km}}=0\rightarrow\sum_n\sum_k\gamma_n^t(k)\frac{1}{\theta_{km}}\mathbb{I}(x_n=m)-\lambda=0
+        \\\lambda=\sum_n\gamma_n^t(k)\frac{1}{\theta_{km}}\mathbb{I}(x_n=m)
+        \\\lambda=\lambda\sum_{m}\theta_{km}=\sum_{m}\lambda\theta_{km}=\sum_m(\sum_n\gamma_n^t(k)\frac{\mathbb{I}(x_n=m)}{\theta_{km}})\theta_{km}=\sum_m\sum_n\gamma_n^t(k)\mathbb{I}(x_n=m)
+        \\\lambda=\sum_n\gamma_n^t(k)\rightarrow\theta_{km}^(t+1)=\frac{\sum_n\gamma_n^t(k)\mathbb{I}(x_n=m)}{\sum_n\gamma_n^t(k)}=\frac{\sum_n\gamma_n^t(k)x_n}{\sum_n\gamma_n^t(k)}
+    \end{gather*}
+    Now we use The method of Lagrange coefficients to find $\pi_k$:
+    \begin{gather*}
+        L(\lambda,\pi_k)=\sum_n\sum_k\gamma_n^t(k)ln(\pi_k)+\lambda(\sum_k\pi_k-1),\\
+        \frac{\partial L(\theta,\lambda)}{\partial \pi_{km}}=0\rightarrow\sum_n\sum_k\gamma_n^t(k)\frac{1}{\pi_k}+\lambda=0\rightarrow\pi_k=\frac{-\sum_n\gamma_n^t(k)}{\lambda}
+    \end{gather*}
+    Now we find $\lambda$:
+    \begin{gather*}
+        1=\sum_k\pi_k=-\frac{\sum_n\sum_k\gamma_n^t(k)}{\lambda}\rightarrow1=-\frac{\sum_n(1)}{\lambda}\rightarrow\lambda=-N\\
+        \pi_k^{t+1}=\frac{\sum_n\gamma_n^t(k)}{N}
+    \end{gather*}
+\end{qsolve}
+
 \clearpage
 
 \section{Simulation Questions}

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.3.31)  22 APR 2023 00:56
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.3.31)  23 APR 2023 00:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -747,81 +747,96 @@ Overfull \hbox (0.33014pt too wide) in paragraph at lines 26--26
 []|  [] [] 
  []
 
+File: outputs/pic1.png Graphic file (type bmp)
+<outputs/pic1.png>
+[1]
 Missing character: There is no θ ("3B8) in font cmmi12!
-[1] [2]
-Overfull \hbox (0.33014pt too wide) in paragraph at lines 63--63
+ [2]
+Overfull \hbox (25.92256pt too wide) detected at line 108
+\OML/cmm/m/it/12 ^^M[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 k\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 q[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 p\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 Z \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 k\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 x[]; ^^R\OT1/cmr/m/n/12 ) = [][]  = []
+ []
+
+
+Overfull \hbox (2.40186pt too wide) detected at line 144
+[]
+ []
+
+[3] [4] [5] [6
+
+] [7]
+Overfull \hbox (0.33014pt too wide) in paragraph at lines 234--234
 []|  [] [] 
  []
 
 (c:/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 75.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 246.
 File: outputs/output1.png Graphic file (type bmp)
 <outputs/output1.png>
 File: outputs/output2.png Graphic file (type bmp)
 <outputs/output2.png>
- [3
+ [8
 
 ]
 File: outputs/output3.png Graphic file (type bmp)
 <outputs/output3.png>
- [4]
+ [9]
 Overfull \vbox (36.80974pt too high) has occurred while \output is active []
 
- [5]
+ [10]
 File: outputs/output4.png Graphic file (type bmp)
 <outputs/output4.png>
 File: outputs/output5.png Graphic file (type bmp)
 <outputs/output5.png>
 File: outputs/output6.png Graphic file (type bmp)
 <outputs/output6.png>
- [6] [7]
+ [11] [12]
 File: outputs/output20.png Graphic file (type bmp)
 <outputs/output20.png>
- [8
+ [13
 
 ]
 File: outputs/output9.png Graphic file (type bmp)
 <outputs/output9.png>
 File: outputs/output10.png Graphic file (type bmp)
 <outputs/output10.png>
- [9
+ [14
 
 ]
 File: outputs/output11.png Graphic file (type bmp)
 <outputs/output11.png>
 File: outputs/output12.png Graphic file (type bmp)
 <outputs/output12.png>
- [10]
+ [15]
 File: outputs/output13.png Graphic file (type bmp)
 <outputs/output13.png>
 File: outputs/output14.png Graphic file (type bmp)
 <outputs/output14.png>
- [11]
+ [16]
 File: outputs/output17.png Graphic file (type bmp)
 <outputs/output17.png>
 File: outputs/output18.png Graphic file (type bmp)
 <outputs/output18.png>
- [12]
+ [17]
 File: outputs/output19.png Graphic file (type bmp)
 <outputs/output19.png>
- [13] 
+ [18] 
 AED: lastpage setting LastPage
-[14] (./main.aux)
+[19] (./main.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: A4B9C9FE95C3A9DB2CED9F932C951861;1452.
+(rerunfilecheck)             Checksum: BC2C2D7E5D605432DB4C836F5FFFD08B;1756.
  ) 
 Here is how much of TeX's memory you used:
- 27567 strings out of 476919
- 534383 string characters out of 5825424
- 1626266 words of memory out of 5000000
- 47032 multiletter control sequences out of 15000+600000
+ 27580 strings out of 476919
+ 534598 string characters out of 5825424
+ 1626843 words of memory out of 5000000
+ 47044 multiletter control sequences out of 15000+600000
  411808 words of font info for 76 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 112i,11n,121p,2209b,1447s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 112i,17n,121p,1734b,1447s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.xdv (15 pages, 420060 bytes).
+Output written on main.xdv (20 pages, 468376 bytes).
