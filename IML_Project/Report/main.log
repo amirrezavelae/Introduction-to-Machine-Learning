@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.3.31)  23 APR 2023 00:31
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.3.31)  23 APR 2023 00:53
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -639,30 +639,30 @@ LaTeX Warning: Label `code:EM algorithm' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 23.
  (c:/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 23.
+LaTeX Font Info:    ... okay on input line 23.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -698,7 +698,7 @@ LaTeX Font Info:    ... okay on input line 22.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 22.
+Package hyperref Info: Link coloring ON on input line 23.
 (c:/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (c:/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
@@ -708,42 +708,42 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count343
 )
-LaTeX Info: Redefining \ref on input line 22.
-LaTeX Info: Redefining \pageref on input line 22.
-LaTeX Info: Redefining \nameref on input line 22.
+LaTeX Info: Redefining \ref on input line 23.
+LaTeX Info: Redefining \pageref on input line 23.
+LaTeX Info: Redefining \nameref on input line 23.
  (./main.out) (./main.out)
 \@outlinefile=\write6
 \openout6 = `main.out'.
 
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 22.
+(lastpage)             ! on input line 23.
 \c@lstlisting=\count344
 File: logo/logo.png Graphic file (type bmp)
 <logo/logo.png>
-LaTeX Font Info:    Trying to load font information for U+msa on input line 23.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 24.
  (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 23.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 24.
  (c:/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 24--24
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--24
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
 
  []
 
 File: logo/logo2.png Graphic file (type bmp)
 <logo/logo2.png>
 
-Overfull \hbox (0.33014pt too wide) in paragraph at lines 26--26
+Overfull \hbox (0.33014pt too wide) in paragraph at lines 27--27
 []|  [] [] 
  []
 
@@ -752,26 +752,36 @@ File: outputs/pic1.png Graphic file (type bmp)
 [1]
 Missing character: There is no θ ("3B8) in font cmmi12!
  [2]
-Overfull \hbox (25.92256pt too wide) detected at line 108
+Overfull \hbox (25.92256pt too wide) detected at line 109
 \OML/cmm/m/it/12 ^^M[]\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 k\OT1/cmr/m/n/12 ) = \OML/cmm/m/it/12 q[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 p\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 Z \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 k\OMS/cmsy/m/n/12 j\OML/cmm/m/it/12 x[]; ^^R\OT1/cmr/m/n/12 ) = [][]  = []
  []
 
 
-Overfull \hbox (2.40186pt too wide) detected at line 144
+Overfull \hbox (5.23195pt too wide) detected at line 126
+[]
+ []
+
+
+Overfull \hbox (11.76315pt too wide) detected at line 145
 []
  []
 
 [3] [4] [5] [6
 
 ] [7]
-Overfull \hbox (0.33014pt too wide) in paragraph at lines 234--234
+Overfull \hbox (0.33014pt too wide) in paragraph at lines 235--235
 []|  [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 243--244
+
  []
 
 (c:/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2020/03/24 1.8d listings language file
 )
-Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 246.
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 247.
 File: outputs/output1.png Graphic file (type bmp)
 <outputs/output1.png>
 File: outputs/output2.png Graphic file (type bmp)
@@ -828,15 +838,15 @@ AED: lastpage setting LastPage
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: BC2C2D7E5D605432DB4C836F5FFFD08B;1756.
+(rerunfilecheck)             Checksum: 42A5EB55F4E091DAB51FF36402D45A7F;1880.
  ) 
 Here is how much of TeX's memory you used:
  27580 strings out of 476919
  534598 string characters out of 5825424
- 1626843 words of memory out of 5000000
+ 1627155 words of memory out of 5000000
  47044 multiletter control sequences out of 15000+600000
  411808 words of font info for 76 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 112i,17n,121p,1734b,1447s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 112i,17n,121p,1734b,1445s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.xdv (20 pages, 468376 bytes).
+Output written on main.xdv (20 pages, 469224 bytes).
