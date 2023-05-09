@@ -1,9 +1,9 @@
 # Fdb version 3
-["xdvipdfmx"] 1681755134 "main.xdv" "main.pdf" "main" 1681755135
-  "main.xdv" 1681755134 123272 5c4fbb985ea405d0c9b87439edea452f "xelatex"
+["xdvipdfmx"] 1683646930 "main.xdv" "main.pdf" "main" 1683646931
+  "main.xdv" 1683646930 228516 5d96bb190f6041295d775851d02c356c "xelatex"
   (generated)
   "main.pdf"
-["xelatex"] 1681755132 "e:/Course 012/IML/IML-HW1/main.tex" "main.xdv" "main" 1681755135
+["xelatex"] 1683646928 "e:/Course 012/IML/IML-HW2/main.tex" "main.xdv" "main" 1683646931
   "c:/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1648729178 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/adobe/zapfding/pzdr.tfm" 1648730213 1528 7e12f4c0fcf5a072cebdcfbfc610f54c ""
   "c:/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm" 1648728803 1124 14ccf5552bc7f77ca02a8a402bea8bfb ""
@@ -125,6 +125,7 @@
   "c:/texlive/2021/texmf-dist/tex/latex/base/size12.clo" 1648729369 8450 6fd3588c0e9d06f6f56c6cf4f7246466 ""
   "c:/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd" 1648729369 2431 b6cead9f069ed55f4fba0c637aa047b6 ""
   "c:/texlive/2021/texmf-dist/tex/latex/blindtext/blindtext.sty" 1648728898 47295 de48b7f8ebf4b54709a2f6b2c7106dd5 ""
+  "c:/texlive/2021/texmf-dist/tex/latex/capt-of/capt-of.sty" 1648728919 1311 063f8536a047a2d9cb1803321f793f37 ""
   "c:/texlive/2021/texmf-dist/tex/latex/environ/environ.sty" 1648729108 4378 f429f0da968c278653359293040a8f52 ""
   "c:/texlive/2021/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1648729124 46845 3b58f70c6e861a13d927bff09d35ecbc ""
   "c:/texlive/2021/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty" 1648729140 17086 7ed8cbc4d361ec87392817e0dd4f65ec ""
@@ -156,6 +157,7 @@
   "c:/texlive/2021/texmf-dist/tex/latex/lipsum/lipsum.sty" 1648729420 18004 97caa3416d49c368940cf5bdd8679717 ""
   "c:/texlive/2021/texmf-dist/tex/latex/listings/listings.cfg" 1648729422 1830 e31effa752c61538383451ae21332364 ""
   "c:/texlive/2021/texmf-dist/tex/latex/listings/listings.sty" 1648729422 80964 64e57373f36316e4a09b517cbf1aba2e ""
+  "c:/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty" 1648729422 204271 bae5b2d457283e99567249c1990510be ""
   "c:/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty" 1648729422 77022 ee25ce086f4a79d8cf73bac6f94c02a5 ""
   "c:/texlive/2021/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty" 1648729669 1090 bae35ef70b3168089ef166db3e66f5b2 ""
   "c:/texlive/2021/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty" 1648729669 410 615550c46f918fcbee37641b02a862d9 ""
@@ -197,12 +199,15 @@
   "c:/texlive/2021/texmf-dist/web2c/texmf.cnf" 1648729354 39972 3d6bb4d9d719e93193fa020b58adf5d4 ""
   "c:/texlive/2021/texmf-var/web2c/xetex/xelatex.fmt" 1648730298 5093733 e840ea8a4220a520c681600c308c97ae ""
   "c:/texlive/2021/texmf.cnf" 1648730223 713 e69b156964470283e0530f5060668171 ""
-  "e:/Course 012/IML/IML-HW1/main.tex" 1681755131 21650 cdd81c46b957ba1e8252b38cf4298779 ""
+  "e:/Course 012/IML/IML-HW2/main.tex" 1683646927 31190 6087eb79ad6131f159ae2d39ea9f4071 ""
   "logo/logo.png" 1678186638 12151 908dd55c5271716f7a77323a8a57a0ad ""
   "logo/logo2.png" 1678186638 43293 47a971f37e4440ed15271482e03873bf ""
-  "main.aux" 1681755134 1892 5f392d95448a8020bc375eae964fb713 "xelatex"
-  "main.out" 1681755134 1724 0da1faaba94ec990e12597c4e0aef6b9 "xelatex"
-  "main.tex" 1681755131 21650 cdd81c46b957ba1e8252b38cf4298779 ""
+  "main.aux" 1683646930 3972 cce110fcc12008cfb60c4bb5844c0868 "xelatex"
+  "main.out" 1683646930 2631 f24109fed37adfcc8b238b0c8a38ceee "xelatex"
+  "main.tex" 1683646927 31190 6087eb79ad6131f159ae2d39ea9f4071 ""
+  "plot1.png" 1683641302 25108 ac9d58ae2e30f2c9457da91d15e3607b ""
+  "plot2.png" 1683641601 33035 cf5cbc16575ea3608384200d23a22c7b ""
+  "plot3.png" 1683646434 9947 8e191bf6bc25d72529904d752c738c6b ""
   "uni-code.sty" 1678186638 2485 5fd6f6591117f1f0ad2ce38234e0be84 ""
   "uni-environments.sty" 1678186638 4724 c70298798aa2978f91245a3cdf4ef31b ""
   "uni-math.sty" 1678186638 704 d86df97abd20b1a32bb8271e661b4580 ""
@@ -210,7 +215,7 @@
   "uni-title.sty" 1678186638 2323 184e0f3b74eeea98444cee4598bc17c5 ""
   "uni-variable.sty" 1678186965 1691 b1cba47700a6570f56e0c4c3191ed003 ""
   (generated)
-  "main.out"
-  "main.log"
   "main.xdv"
+  "main.out"
   "main.aux"
+  "main.log"

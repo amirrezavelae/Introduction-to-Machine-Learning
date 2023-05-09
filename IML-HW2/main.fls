@@ -1,8 +1,8 @@
-PWD e:/Course 012/IML/IML-HW1
+PWD e:/Course 012/IML/IML-HW2
 INPUT c:/texlive/2021/texmf.cnf
 INPUT c:/texlive/2021/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2021/texmf-var/web2c/xetex/xelatex.fmt
-INPUT e:/Course 012/IML/IML-HW1/main.tex
+INPUT e:/Course 012/IML/IML-HW2/main.tex
 OUTPUT main.log
 INPUT c:/texlive/2021/texmf-dist/tex/latex/base/article.cls
 INPUT c:/texlive/2021/texmf-dist/tex/latex/base/article.cls
@@ -1003,6 +1003,17 @@ INPUT c:/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT c:/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT c:/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT c:/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT c:/texlive/2021/texmf-dist/tex/latex/capt-of/capt-of.sty
+INPUT c:/texlive/2021/texmf-dist/tex/latex/capt-of/capt-of.sty
+INPUT c:/texlive/2021/texmf-dist/tex/latex/capt-of/capt-of.sty
+INPUT c:/texlive/2021/texmf-dist/tex/latex/capt-of/capt-of.sty
+INPUT c:/texlive/2021/texmf-dist/tex/latex/capt-of/capt-of.sty
+INPUT c:/texlive/2021/texmf-dist/tex/latex/capt-of/capt-of.sty
+INPUT c:/texlive/2021/texmf-dist/tex/latex/capt-of/capt-of.sty
+INPUT c:/texlive/2021/texmf-dist/tex/latex/capt-of/capt-of.sty
+INPUT c:/texlive/2021/texmf-dist/tex/latex/capt-of/capt-of.sty
+INPUT c:/texlive/2021/texmf-dist/tex/latex/capt-of/capt-of.sty
+INPUT c:/texlive/2021/texmf-dist/tex/latex/capt-of/capt-of.sty
 INPUT ./uni-code.sty
 INPUT ./uni-code.sty
 INPUT uni-code.sty
@@ -1127,6 +1138,19 @@ INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmmib6.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmbsy10.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy8.tfm
 INPUT c:/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmbsy6.tfm
+INPUT c:/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT c:/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
+INPUT ./plot1.png
+INPUT ./plot1.png
+INPUT plot1.png
+INPUT ./plot2.png
+INPUT ./plot2.png
+INPUT plot2.png
+INPUT ./plot3.png
+INPUT ./plot3.png
+INPUT plot3.png
 INPUT main.aux
 INPUT ./main.out
 INPUT ./main.out
