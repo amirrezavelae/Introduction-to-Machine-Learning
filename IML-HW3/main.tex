@@ -33,7 +33,8 @@ Design a simple neural network with one hidden-layer that implements the followi
 Draw the network and determine all its weights.
 \begin{qsolve}
     \begin{gather*}
-
+        (A\vee \bar{B}) \oplus (\bar{C} \vee \bar{D}) = ((A\vee \bar{B}) \vee (C \wedge D)) \vee ((\bar{A} \wedge B) \vee (\bar{C} \vee \bar{D}))\\
+        = ((A\vee \bar{B} \vee C) \wedge (A\vee \bar{B} \vee D)) \vee ((\bar{A} \vee \bar{C} \vee \bar{D}) \wedge (B \vee \bar{C} \vee \bar{D}))
     \end{gather*}
 \end{qsolve}
 
