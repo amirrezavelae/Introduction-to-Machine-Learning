@@ -1,10 +1,10 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.3.31)  9 MAY 2023 20:12
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021/W32TeX) (preloaded format=xelatex 2022.3.31)  25 MAY 2023 21:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"e:/Course 012/IML/IML-HW2/main.tex"
-(e:/Course 012/IML/IML-HW2/main.tex
+**"e:/Course 012/IML/IML-HW3/main.tex"
+(e:/Course 012/IML/IML-HW3/main.tex
 LaTeX2e <2020-10-01> patch level 4
 L3 programming layer <2021-02-18> (c:/texlive/2021/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
@@ -626,14 +626,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )) (c:/texlive/2021/texmf-dist/tex/latex/capt-of/capt-of.sty
 Package: capt-of 2009/12/29 v0.2 standard captions outside of floats
-) (./uni-code.sty) (./main.aux
-
-LaTeX Warning: Label `lst:code' multiply defined.
-
-
-LaTeX Warning: Label `lst:code' multiply defined.
-
-)
+) (./uni-code.sty) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
@@ -744,76 +737,19 @@ Overfull \hbox (0.33014pt too wide) in paragraph at lines 28--28
 []|  [] [] 
  []
 
-Missing character: There is no ∗ ("2217) in font cmr8!
-Missing character: There is no λ ("3BB) in font cmmi8!
-[1] [2] [3]
-Overfull \hbox (0.33014pt too wide) in paragraph at lines 111--111
-[]|  [] [] 
- []
 
-[4
-
-] [5]
-Overfull \hbox (0.33014pt too wide) in paragraph at lines 179--179
-[]|  [] [] 
- []
-
-[6
-
-]
-Overfull \vbox (13.82481pt too high) has occurred while \output is active []
-
- [7] [8]
-Overfull \hbox (0.33014pt too wide) in paragraph at lines 357--357
-[]|  [] [] 
- []
-
-(c:/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2020/03/24 1.8d listings language file
-)
-File: plot1.png Graphic file (type bmp)
-<plot1.png>
- [9]
-File: plot2.png Graphic file (type bmp)
-<plot2.png>
- [10]
-Overfull \hbox (0.33014pt too wide) in paragraph at lines 432--432
-[]|  [] [] 
- []
-
-[11]
-Overfull \hbox (0.33014pt too wide) in paragraph at lines 463--463
-[]|  [] [] 
- []
-
-[12] [13]
-Overfull \hbox (0.33014pt too wide) in paragraph at lines 527--527
-[]|  [] [] 
- []
-
-File: plot3.png Graphic file (type bmp)
-<plot3.png>
-
-Underfull \hbox (badness 10000) in paragraph at lines 583--586
-
- []
-
-[14] [15] 
 AED: lastpage setting LastPage
-[16] (./main.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
+[1] (./main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: F24109FED37ADFCC8B238B0C8A38CEEE;2631.
+(rerunfilecheck)             Checksum: 4F0235BD8B6CDFB4DDB7DABB2B047E48;193.
  ) 
 Here is how much of TeX's memory you used:
- 27416 strings out of 476919
- 531707 string characters out of 5825424
- 1293797 words of memory out of 5000000
- 46886 multiletter control sequences out of 15000+600000
- 414577 words of font info for 85 fonts, out of 8000000 for 9000
+ 27127 strings out of 476919
+ 528078 string characters out of 5825424
+ 964788 words of memory out of 5000000
+ 46628 multiletter control sequences out of 15000+600000
+ 411736 words of font info for 67 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 112i,23n,121p,516b,1427s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 112i,12n,121p,465b,525s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.xdv (17 pages, 228516 bytes).
+Output written on main.xdv (2 pages, 27312 bytes).
