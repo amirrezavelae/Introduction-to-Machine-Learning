@@ -1,9 +1,9 @@
 # Fdb version 3
-["xdvipdfmx"] 1685271217 "main.xdv" "main.pdf" "main" 1685271218
+["xdvipdfmx"] 1685271217 "main.xdv" "main.pdf" "main" 1685271330
   "main.xdv" 1685271217 153524 7ee19256fcf0a4f505cac1e7aa5ac4e2 "xelatex"
   (generated)
   "main.pdf"
-["xelatex"] 1685271214 "e:/Course 012/IML/IML-HW3/main.tex" "main.xdv" "main" 1685271218
+["xelatex"] 1685271214 "e:/Course 012/IML/IML-HW3/main.tex" "main.xdv" "main" 1685271330
   "Q4.png" 1685219801 72138 2cf00a8c261c1d9e4c9555cf0b91bbe1 ""
   "Q5.png" 1685260095 96085 29739c518a2d4d04a7b8316570bc918f ""
   "c:/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1648729178 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -221,12 +221,12 @@
   "c:/texlive/2021/texmf-dist/web2c/texmf.cnf" 1648729354 39972 3d6bb4d9d719e93193fa020b58adf5d4 ""
   "c:/texlive/2021/texmf-var/web2c/xetex/xelatex.fmt" 1648730298 5093733 e840ea8a4220a520c681600c308c97ae ""
   "c:/texlive/2021/texmf.cnf" 1648730223 713 e69b156964470283e0530f5060668171 ""
-  "e:/Course 012/IML/IML-HW3/main.tex" 1685271213 20308 8e2a2a70a65eda6cda797b4d12be48f7 ""
+  "e:/Course 012/IML/IML-HW3/main.tex" 1685271329 20308 8e2a2a70a65eda6cda797b4d12be48f7 ""
   "logo/logo.png" 1678186638 12151 908dd55c5271716f7a77323a8a57a0ad ""
   "logo/logo2.png" 1678186638 43293 47a971f37e4440ed15271482e03873bf ""
   "main.aux" 1685271217 1338 fdbb3822e02d91075c2c57e2181ee10c "xelatex"
   "main.out" 1685271217 789 109d45fb41d33dc9692e1c31746f94af "xelatex"
-  "main.tex" 1685271213 20308 8e2a2a70a65eda6cda797b4d12be48f7 ""
+  "main.tex" 1685271329 20308 8e2a2a70a65eda6cda797b4d12be48f7 ""
   "uni-code.sty" 1678186638 2485 5fd6f6591117f1f0ad2ce38234e0be84 ""
   "uni-environments.sty" 1678186638 4724 c70298798aa2978f91245a3cdf4ef31b ""
   "uni-math.sty" 1678186638 704 d86df97abd20b1a32bb8271e661b4580 ""
@@ -234,7 +234,7 @@
   "uni-title.sty" 1678186638 2323 184e0f3b74eeea98444cee4598bc17c5 ""
   "uni-variable.sty" 1678186965 1691 b1cba47700a6570f56e0c4c3191ed003 ""
   (generated)
-  "main.xdv"
-  "main.log"
-  "main.out"
   "main.aux"
+  "main.xdv"
+  "main.out"
+  "main.log"
